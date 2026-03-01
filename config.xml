@@ -40,7 +40,8 @@
   <plugin name="cordova-plugin-inappbrowser" />
 
   <!-- ✅ ADMOB (STABLE) -->
-  <plugin name="admob-plus-cordova"spec="^2.0.0-alpha.19">
+  <plugin name="admob-plus-cordova"
+          spec="^2.0.0-alpha.19">
     <!-- TEST APP ID (SAFE) -->
     <variable name="ADMOB_APP_ID_ANDROID"
               value="ca-app-pub-3940256099942544~3347511713" />
