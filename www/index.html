@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RME Reviewer - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div id="app-root">
+   <div id="splash" class="page active fade">
+    <h1 class="primary-h1">RME Reviewer</h1>
+    <p class="primary-p">Preparing your quiz experience...</p>
+   </div>
+  
+  <div class="app-container">
+  
+   <header class="app-header">
+    <img src="assets/images/icon/icon.png" class="icon">
+    <h2 id="h2-primary">RME Reviewer</h2>
+
+   </header>
+  
+ <div id="index" class="page">
+   <div class="page-container">
+   <div class="quote">
+     <blockquote>
+      <b>RME Reviewer</b>  -  Your ultimate tool to prepare and pass the Registered Master Electrician exam efficiently.
+     </blockquote>
+   </div>
+   <div class="card">
+     <div class="card-container">
+       <div class="shit">
+     <h1 class="love">🥰</h1>
+    <h1>RME Reviewer</h1>
+       </div>
+     <button class="btn main-button" data-page="quiz-menu">Quiz</button>
+     <button class="btn main-button" data-page="settings">Settings</button>
+     <button class="btn main-button" data-page="rme-info-page">What is RME?</button>
+    <div class="switch-container">
+      <span class="switch-label">Dark/Light Mode</span>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider"></span>
+      </label>
+    </div>
+    </div>
+    </div>
+    <div id="nativeAdIndex" class="native-ad-bottom"></div>
+  </div>
+ </div>
+ 
+ <div id="quiz-menu" class="page">
+   <div class="page-container">
+   <div class="quote">
+     <blockquote>
+        Genius is one percent inspiration and ninety-nine percent perspiration.
+     </blockquote>
+     <cite>Thomas Edison</cite>
+   </div>
+   <div class="card">
+     <div class="card-container">
+    <h1>Select a Quiz</h1>
+  <div id="quiz-list" class="grid quiz-list-container">
+    <button class="btn" data-quiz="quiz1">Quiz 1</button>
+    <button class="btn" data-quiz="quiz2">Quiz 2</button>
+    <button class="btn" data-quiz="quiz3">Quiz 3</button>
+    <button class="btn" data-quiz="quiz4">Quiz 4</button>
+    <button class="btn" data-quiz="quiz5">Quiz 5</button>
+    <button class="btn" data-quiz="quiz6">Quiz 6</button>
+    <button class="btn" data-quiz="quiz7">Quiz 7</button>
+    <button class="btn" data-quiz="quiz8">Quiz 8</button>
+    <button class="btn" data-quiz="quiz9">Quiz 9</button>
+    <button class="btn" data-quiz="quiz10">Quiz 10</button>
+    </div>
+    <button class="btn main-button" data-page="break">💬 Quick Break</button>
+    <button class="btn back-menu" data-page="index">Back</button>
+   </div>
+   </div>
+     <div id="nativeAdMenu" class="native-ad-bottom"></div>
+    </div>
+ </div>
+ 
+ <div id="settings" class="page">
+   <div class="page-container">
+   <div class="quote">
+     <blockquote>
+        Learning never exhausts the mind.
+     </blockquote>
+     <cite>Leonardo da Vinci</cite>
+   </div>
+  <div class="card">
+         <div class="card-container">
+    <h1>Settings</h1>
+    <button class="btn main-button" data-page="share-page">Share Apps</button>
+    <button class="btn main-button" data-page="rate">Rate 5 Stars</button>
+    <button class="btn main-button" data-page="privacy">Privacy & Terms</button>
+    <button class="btn main-button" data-page="about">About App & Licenses</button>
+    <button class="btn back-menu" data-page="index">Back</button>
+  </div>
+  </div>
+  </div>
+ </div>
+
+  <div id="quiz-page" class="page">
+    <div class="page-container">
+   <div class="quote">
+     <blockquote>
+        Education is not the learning of facts, but the training of the mind to think.
+     </blockquote>
+     <cite>Albert Einstein</cite>
+   </div>
+    <div class="card">
+    <div class="card-container">
+<button id="unlockBtn" class="lock-icon">🔒 Unlock for Offline</button>
+      <h1 id="quizTitle"></h1>
+     <div class="review-mode">
+<button id="modeWrong">Review Wrong</button>
+<button id="modeAll">All Quiz</button>
+     </div>
+    <div id="status"></div>
+    <div id="quiz" style="display:none;">
+      <div id="question">Loading...</div>
+      <div class="options" id="options"></div>
+     <div class="review-mode">
+    <button id="prevBtn">◀️  Previous</button>
+    <button id="nextBtn">Next  ▶️</button>
+      </div>
+      <div id="score"></div>
+    </div>
+      <div class="grid-menu">
+        <button id="resetBtn" class="quiz-small">Reset</button>
+        <button id="shuffleBtn" class="quiz-small">Shuffle</button>
+        <button class="quiz-small" data-page="quiz-menu">Back</button>
+      </div>
+     </div>
+     </div>
+      <div id="nativeAdQuiz" class="native-ad-bottom"></div>
+   </div>
+ </div>
+   
+ <div id="resultPage" class="page">
+    <div class="page-result">
+      <h1>Thank you for choosing RME Reviewer.</h1>
+      <p>Consistent practice builds confident electricians.<br>Retake the quiz and sharpen your skills.</p>
+     <div class="card card-fourth">
+  <h2>Quiz Finished</h2>
+  <div id="scoreResult"></div>
+   <button class="back-result" data-page="quiz-menu">Back</button>
+     </div>
+    </div> 
+ </div>
+   
+   <div id="share-page" class="page">
+     <div class="page-container">
+     <div class="card card-third">
+     <div class="card-container">
+    <h1>Share This App</h1>
+    <p>Spread the word and share this app with your friends!</p>
+      <button class="btn main-button" data-share="Facebook">Facebook</button>
+      <button class="btn main-button" data-share="Twitter">Twitter</button>
+      <button class="btn main-button" data-share="copy">Copy Link</button>
+      <button class="btn main-button" data-share="phone">Share via Phone</button>
+      <button class="btn back-menu" data-page="settings">Back</button>
+  </div>
+  </div>
+  </div>
+ </div>
+   
+ <div id="rate" class="page">
+   <div class="page-container">
+   <div class="card card-third">
+   <div class="card-container">
+    <h1>Rate RME Reviewer</h1>
+    <p>Thank you for your support!<br>Tap the button below to rate us on Google Play.</p>
+    <div class="stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <button class="btn main-button" data-share="rate">Tap to Rate</button>
+    <button class="btn back-menu" data-page="settings">Back</button>
+  </div>
+  </div>
+ </div>
+</div>
+
+<div id="privacy" class="page">
+  <div class="page-container">
+  <div class="card card-secondary">
+    <h1>Privacy & Terms</h1>
+    <p><strong>RME Reviewer</strong> values your privacy. This Privacy Policy explains how our app collects, uses, and protects your information.</p>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>No Personal Data Required</strong> – You can use the app without creating an account or providing personal information.</li>
+      <li><strong>Usage Data</strong> – The app may collect non-personal information such as device type, operating system, and app usage statistics (for improvement purposes).</li>
+      <li><strong>Advertisements</strong> – Third-party ad networks (such as Google AdMob) may collect anonymized data for personalized or non-personalized ads.</li>
+    </ul>
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li>To improve app performance and user experience.</li>
+      <li>To serve relevant ads and keep the app free.</li>
+      <li>To fix bugs and enhance features.</li>
+    </ul>
+    <h2>Advertisements and Ad Policy</h2>
+    <p>This app displays advertisements provided by third-party networks such as Google AdMob. These ads help keep the app free for all users. Some ad providers may use cookies or device identifiers to deliver more relevant ads. You can learn more or manage ad personalization settings by visiting your Google account’s <a href="#" class="external-link" data-url="https://adssettings.google.com">
+        Ad Settings
+         </a>.</p>
+    <p>We ensure that ads do not interfere with core app functionality and are shown in compliance with Google Play’s Families and Ads policy.</p>
+    <h2>Third-Party Services</h2>
+    <p>Our app may use third-party services that may collect anonymous usage data. These services may include:</p>
+    <ul>
+      <li>Google AdMob (for ads)</li>
+      <li>Google Analytics or similar tools (for app usage statistics)</li>
+    </ul>
+    <p>Please refer to the privacy policies of these third-party services for more details.</p>
+    <h2>Data Security</h2>
+    <p>We do not sell, trade, or share your personal data. While no method of transmission is 100% secure, we strive to protect your data as best as possible using modern security practices.</p>
+    <h2>GDPR and User Consent</h2>
+    <p>For users in the European Economic Area (EEA), the app may request consent before showing personalized ads. If consent is denied, only non-personalized ads will be shown. We fully comply with Google’s EU User Consent Policy.</p>
+    <h2>Children’s Privacy</h2>
+    <p>This app is intended for general audiences and not specifically directed toward children under 13. We do not knowingly collect personal information from children. Google AdMob may show only non-personalized ads to users identified as under 13, in compliance with COPPA (Children’s Online Privacy Protection Act).</p>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted within the app or on our official website. Users are encouraged to review this page periodically for updates.</p>
+     <h2>Terms of Use</h2>
+     <p>By using this app, you agree to the following:</p>
+     <ul>
+       <li>The app is for educational purposes only.</li>
+       <li>The developer is not responsible for exam results.</li>
+       <li>Users may not copy, redistribute, or modify app content without permission.</li>
+       <li>Features such as offline unlock are non-transferable and time-limited.</li>
+      </ul>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, you may contact us at:</p>
+    <p>📧 <a href="#" onclick="openGmail()">dccarlobos@gmail.com</a></p>
+    <p><em>Last updated:  March 2026</em></p>
+    <button class="btn back-menu" data-page="settings">Back</button>
+  </div>
+  </div>
+</div>
+
+<div id="about" class="page">
+  <div class="page-container">
+  <div class="card card-secondary">
+    <h1>About App</h1>
+    <p><strong>RME Reviewer</strong> is a mobile/web application designed to help aspiring <em>Registered Master Electricians</em> in the Philippines review effectively for the board exam. The app provides:</p>
+    <ul>
+      <li>Practice quizzes with multiple-choice questions</li>
+      <li>Results tracking and performance improvement</li>
+      <li>Light and dark theme for user comfort</li>
+    </ul>
+    <p>This app is free to use and supported by ads.</p>
+    <h2>Licenses</h2>
+    <p>This app may use the following open-source libraries or frameworks:</p>
+    <ul>
+      <li><strong>HTML, CSS, JavaScript</strong> – for building the app interface</li>
+      <li><strong>LocalStorage API</strong> – for saving settings (like theme preference)</li>
+      <li><strong>Google Fonts / System Fonts</strong> – for better typography</li>
+      <li><strong>AdMob / Ad Services</strong> – for in-app advertisements</li>
+    </ul>
+    <p>All trademarks, logos, and brand names are the property of their respective owners. This app is not affiliated with the Professional Regulation Commission (PRC).</p>
+    <div class="disclaimer">
+      📘 All questions are based on public domain engineering concepts and are rephrased for educational purposes.
+    </div>
+    <h2>Developer</h2>
+<p>Developed by:  <strong>dccarlo</strong><br>
+Developed with AI assistance<br>
+    📧 <a href="#" onclick="openGmail()">dccarlobos@gmail.com</a></p>
+    <button class="btn back-menu" data-page="settings">Back</button>
+  </div>
+  </div>
+ </div>
+ 
+   <div id="extra" class="page">
+     <div class="page-container-extra">
+     <div class="card card-extra">
+     <div class="extra-container">
+         <svg viewBox="0 0 36 36" class="image-svg">
+  <path d="M18,24.42a4,4,0,1,0,4,4A4,4,0,0,0,18,24.42Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,18,30.42Z"/>
+  <path d="M26.21,21.85a1,1,0,0,0-.23-1.4,13.56,13.56,0,0,0-5-2.23l3.87,3.87A1,1,0,0,0,26.21,21.85Z"/>
+  <path d="M18.05,10.72a20.88,20.88,0,0,0-4.16.43l1.74,1.74a19,19,0,0,1,2.42-.17A18.76,18.76,0,0,1,28.64,16a1,1,0,0,0,1.12-1.65A20.75,20.75,0,0,0,18.05,10.72Z"/>
+  <path d="M33.55,8.2A28.11,28.11,0,0,0,8.11,5.36L9.69,6.93A26,26,0,0,1,32.45,9.87a1,1,0,0,0,1.1-1.67Z"/>
+  <path d="M1.84,4.75,4.27,7.18c-.62.34-1.23.7-1.83,1.1A1,1,0,1,0,3.56,9.94C4.26,9.47,5,9,5.74,8.65l3.87,3.87A20.59,20.59,0,0,0,6.23,14.4,1,1,0,0,0,7.36,16a18.82,18.82,0,0,1,3.77-2l4.16,4.16A13.51,13.51,0,0,0,10,20.55a1,1,0,0,0,1.18,1.61A11.52,11.52,0,0,1,17,20l10.8,10.8,1.41-1.41-26-26Z"/>
+</svg>
+       <h2>No Internet Connection</h2>
+  <p>An internet connection is required to access this quiz.</p>
+      </div>
+      </div>
+      <div class="notice">
+  <h3>🔔 Important Notice</h3>
+  <p>• Unlock this quiz online for free — ads support this feature.</p>
+  <p>• Tap the 🔒 icon on the Quiz page while connected to the internet to enable offline access.</p>
+  <p>• The quiz stays active for 30 days and automatically relocks after expiration.</p>
+</div>
+       <button class="extra-btn" data-page="quiz-menu">Back</button>
+ </div>
+</div>
+ 
+<div id="break" class="page">
+  <div class="page-container">
+  <div class="card card-secondary">
+    <h3>🟢 RME Reviewer – Just for Fun (Sarcastic Edition)</h3>
+        <p><strong>Hello, future Master Electrician!</strong></p>
+    <p><strong>Congrats</strong> sa pag-click ng reviewer na ito. Oo, tama ka… ito yung parte ng buhay mo kung saan kailangan mong<strong> mag-aral pero naglalaro ka pa rin.</strong><br>Genius ka, di ba? 😏
+    <p><strong>Tips para sa kuryente at buhay:</strong></p>
+    <ol>
+     <li>Always double-check your work… maliban na lang kung trip mo maging human fireworks display.</li>
+     <li>Remember color codes! Pero kung gusto mo namang mag-party sa wires, ignore mo na lang. 🎉</li>
+      <li>Safety first! Oo, helmet at gloves. Pero kung gusto mo ng instant “shock therapy,” walang problema. (Sana lang ‘wag sa quiz mo)</li>
+       <li>Tools are your best friends… until sila ang maging villain sa iyong electrician story. Handle with care, or your fingers will scream louder than your alarm clock.</li>
+    </ol>
+    <p><strong>Mini Quiz Mindset:</strong></p>
+    <ul>
+      <li>Huwag mag-cheat. Pero kung gusto mong maging Einstein overnight, good luck. 😎</li>
+      <li>Measure twice, cut once… o, kung trip mo, sugalin mo na lang. Thrill-seeker ka diba?</li>
+    </ul>
+    <p><strong>For the brave souls:</strong></p>
+    <ul>
+      <li>Minsan, tama ang sagot pero mali ang choice ng wire. Bummer, pero don’t worry, ang tunay na Master Electrician, may sense of humor.</li>
+      <li>Kung hindi mo pa alam ang SNM cable bending radius, don’t panic. Google is your new best friend… aside sa reviewer na ‘to.</li>
+    </ul>
+    <p><strong>Secret Life Lessons from Electricity:</strong></p>
+    <ul>
+      <li>Current flows, problems too. But don’t short-circuit your brain.</li>
+      <li>Voltage may be high, pero ang patience mo dapat mas mataas.</li>
+      <li>And always, kahit may sarcasm dito, knowledge is your ultimate tool.</li>
+    </ul>
+    <p>Enjoy the review, laugh a little, and remember…</p>
+    <p>“Kapag nagkamali ka, treat it like a mini spark show. Fun, dramatic, and totally electrifying.” ⚡</p>
+   <button class="btn back-menu" data-page="quiz-menu">Back</button>
+ </div>
+ </div>
+</div>
+ 
+ <div id="rme-info-page" class="page">
+   <div class="page-container">
+  <div class="card card-fifth">
+     <h2>Registered Master Electrician (RME) sa Pilipinas</h2>
+<h3>Kahulugan at Legal na Batayan</h3>
+<p>Ang <strong>Registered Master Electrician (RME)</strong> ay isang lisensyadong propesyonal sa larangan ng electrical sa Pilipinas. Ang lisensyang ito ay pinangangasiwaan ng Professional Regulation Commission (PRC) alinsunod sa Republic Act No. 7920 o New Electrical Engineering Law.</p>
+<p>Layunin ng lisensyang RME na tiyakin ang kakayahan, kasanayan, at responsableng pagsasagawa ng mga gawaing elektrikal ayon sa pambansang pamantayan.</p>
+<h3>Paano Maging Isang RME</h3>
+<p>Upang maging Registered Master Electrician, ang isang aplikante ay kinakailangang:</p>
+<ul>
+  <li>Hindi bababa sa <strong>21 taong gulang</strong></li>
+  <li>May tamang kombinasyon ng edukasyon at karanasan</li>
+  <li>Makapasa sa <strong>RME Licensure Examination</strong></li>
+</ul>
+<h3>🎓 Edukasyon</h3>
+ <p>Kinakailangang makatapos ng isa hanggang tatlong taong kursong bokasyonal sa Electrical Engineering Technology o kaugnay na larangan.</p>
+<h3>Karanasan</h3>
+  <p>Dapat may beripikadong apprenticeship o praktikal na pagsasanay na tumatagal ng isa (1) hanggang tatlong (3) taon, depende sa natapos na edukasyon.</p>
+ <h3>Halimbawa ng kombinasyon:</h3>
+  <ul>
+    <li>3 taong BSEE o kaugnay na teknikal na kurso + 1 taong praktikal na karanasan</li>
+    <li>2 taong kursong bokasyonal + 2 taong apprenticeship</li>
+  </ul>
+<h3>Pagsusulit</h3>
+ <p>Kinakailangang makapasa sa RME Licensure Examination na sumasaklaw sa:</p>
+  <ul>
+    <li>Mga Teknikal na Asignatura (hal. Ohm’s Law at electrical circuits)</li>
+    <li>Electrical Machines</li>
+    <li>Control Equipment</li>
+    <li>Philippine Electrical Code (PEC)</li>
+  </ul>
+ <h3>Mga Dokumento</h3>
+  <ul>
+   <li>PSA Birth Certificate</li>
+   <li>Marriage Contract (kung naaangkop)</li>
+   <li>Transcript of Records</li>
+   <li>Diploma</li>
+   <li>Balidong NBI Clearance</li>
+   <li>Certificate of Employment o katibayan ng karanasan</li>
+  </ul>
+<h3>Saklaw ng Gawain at Awtoridad ng RME</h3>
+  <p>Ang isang RME ay kwalipikadong:</p>
+   <ul>
+     <li>Mag-install ng mga sistemang elektrikal</li>
+     <li>Magkabit ng electrical wiring</li>
+     <li>Magpatakbo (operate) ng electrical systems</li>
+     <li>Magpanatili (maintenance)</li>
+     <li>Mag-ayos o magkumpuni (repair)</li>
+    </ul>
+ <h3>Limitasyon ng Kapangyarihan</h3>
+   <p>Pinahihintulutan silang humawak ng mga sistemang may:</p>
+   <ul>
+     <li>Hanggang <strong>600 volts</strong></li>
+     <li>Hanggang <strong>500 kilovolt-amperes (kVA)</strong></li>
+    </ul>
+  <p>Maaari rin silang magsilbing <strong>Person In-Charge of Installation</strong> sa mga proyektong:</p>
+  <ul>
+    <li>Residential</li>
+    <li>Commercial</li>
+    <li>Industrial</li>
+  </ul>
+ <h3>Mga Sistemang Maaaring Hawakan</h3>
+   <ul>
+     <li>Electrical wiring</li>
+     <li>Lighting systems</li>
+     <li>Heat systems</li>
+     <li>Power systems</li>
+     <li>Communication systems</li>
+    </ul>
+  <h3>Karapatang Lumagda at Responsibilidad</h3>
+  <h3>Signatory Power</h3>
+   <p>Maaaring lumagda at mag-seal ang RME sa:</p>
+    <ul>
+     <li>Electrical permits</li>
+     <li>Certificates of Inspection</li>
+    </ul>
+  <p>Basta’t ang proyekto ay pasok sa limitasyon ng boltahe at kapasidad.</p>
+  <h3>Kaligtasan at Pagsunod sa Batas</h3>
+   <p>Tinitiyak ng RME na ang mga instalasyon ay sumusunod sa Philippine Electrical Code upang maiwasan ang panganib tulad ng sunog, short circuit, at iba pang electrical hazards.</p>
+ <h3>Pagkakaiba sa Ibang Electrical Professionals</h3>
+  <ul>
+   <li>Ang <strong>RME</strong> ay nakatuon sa installation at maintenance.</li>
+   <li>Ang <strong>Registered Electrical Engineer (REE)</strong> ay mas nakatuon sa design, planning, at mas komplikadong electrical systems.</li>
+    <li>Ang <strong>Professional Electrical Engineer (PEE)</strong> naman ang may pinakamataas na antas ng awtoridad, kabilang ang pagpirma sa malalaking proyekto at high-level engineering design.</li>
+    </ul>
+  <h3>Bisa at Pagpapanatili ng Lisensya</h3> <h3>Bisa</h3>
+    <p>Ang lisensya ng RME ay karaniwang kinikilala bilang katumbas ng <strong>First Level Civil Service Eligibility</strong>.</p>
+    <h3>Pag-renew</h3>
+    <p>Upang manatiling aktibo ang lisensya, kinakailangan ang pagsunod sa <strong>Continuing Professional Development (CPD)</strong> requirements.</p>
+  <h2>Pangunahing Lisensya ng Electrician sa Pilipinas</h2>
+   <p>Ang pangunahing at legal na kinikilalang lisensya para sa isang electrician sa Pilipinas ay ang <strong>Registered Master Electrician (RME)</strong> na ibinibigay ng Professional Regulation Commission (PRC).</p>
+   <p>Ang lisensyang ito ay kinakailangan upang makapagsagawa ng <strong>legal at propesyonal na gawaing elektrikal</strong>, at upang matiyak ang pagsunod sa mga pamantayang itinakda ng Philippine Electrical Code.</p>
+    <p>Bukod sa RME, mayroon pang mas mataas na antas ng lisensya sa larangan ng electrical profession, tulad ng:</p>
+  <ul>
+   <li><strong>Professional Electrical Engineer (PEE)</strong></li>
+   <li><strong>Registered Electrical Engineer (REE)</strong></li>
+  </ul>
+  <h3>Mga Antas ng Lisensya at Sertipikasyon sa Electrical Field</h3>
+  <h3>Registered Master Electrician (RME)</h3>
+   <p>Ito ang <strong>opisyal at kinikilalang lisensya para sa mga electrician sa Pilipinas</strong>.<br>
+Pinahihintulutan ang isang RME na:</p>
+   <ul>
+    <li>Mag-install ng electrical wiring at kagamitan</li>
+    <li>Magsagawa ng testing o pagsusuri ng mga electrical system</li>
+    <li>Magpanatili at magkumpuni ng mga kagamitang elektrikal</li>
+   </ul>
+ <h3>Registered Electrical Engineer (REE)</h3>
+  <p>Isang mas mataas na antas ng propesyonal na lisensya, karaniwang para sa mga nagtapos ng <strong>Bachelor of Science in Electrical Engineering (BSEE)</strong>.</p>
+   <p>Pinahihintulutan ang REE na:</p>
+ <ul>
+  <li>Magdisenyo ng mga electrical system</li>
+  <li>Mangasiwa sa mas malalaking proyekto</li>
+  <li>Mag-supervise ng mga electrical installation</li>
+ </ul>
+ <h3>Professional Electrical Engineer (PEE)</h3>
+  <p>Ito ang <strong>pinakamataas na antas ng lisensya</strong> sa larangan ng electrical profession sa Pilipinas.</p>
+  <p>Ang PEE ay may awtoridad na:</p>
+  <ul>
+    <li>Maghanda at pumirma sa mga plano at disenyo ng electrical system</li>
+    <li>Magbigay ng opisyal na certification at technical evaluation</li>
+    <li>Manguna sa malalaki at komplikadong proyekto</li>
+   </ul>
+  <h3>TESDA Certifications</h3>
+  <p>Bagama’t hindi ito lisensya, ang Technical Education and Skills Development Authority (TESDA) ay nagbibigay ng <strong>National Certificate (NC II) sa Electrical Installation and Maintenance</strong>.</p>
+   <p>Ang sertipikasyong ito ay:</p>
+   <ul>
+     <li>Isang mahalagang patunay ng kasanayan</li>
+     <li>Karaniwang requirement para sa mga entry-level o hands-on na trabaho</li>
+     <li>Hakbang para sa mga nais mag-apply ng RME sa hinaharap</li>
+    </ul>
+      <h2>Official Sources</h2>
+      <p>
+        Para sa updated na impormasyon, bisitahin ang
+      <a href="#" class="external-link" data-url="https://prc.gov.ph">
+  PRC Official Website
+      </a>.
+      </p>
+    </section>
+    <div class="grid grid-menu">
+      <button class="btn back-menu" data-page="index">Back to Menu</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+   </div>
+</div>
+
+<script src="cordova.js"></script>
+<script src="js/exit.js"></script>
+
+<!-- Questions first -->
+<script src="questions/offline/quiz1.js"></script>
+<script src="questions/offline/quiz2.js"></script>
+<script src="questions/online/quiz3.js"></script>
+<script src="questions/online/quiz4.js"></script>
+<script src="questions/online/quiz5.js"></script>
+<script src="questions/online/quiz6.js"></script>
+<script src="questions/online/quiz7.js"></script>
+<script src="questions/online/quiz8.js"></script>
+<script src="questions/online/quiz9.js"></script>
+<script src="questions/online/quiz10.js"></script>
+
+<!-- Core Engine -->
+<script src="js/quiz.js"></script>
+
+<!-- Quiz Menu -->
+<script src="js/quiz-loader.js"></script>
+<script src="js/ads.js"></script>
+<!-- Optional -->
+<script src="js/dev.js"></script>
+
+<!-- SPA / Theme / Back / Share -->
+<script src="js/index.js"></script>
+</body>
+</html>
