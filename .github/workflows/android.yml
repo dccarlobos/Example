@@ -30,12 +30,13 @@ jobs:
         run: npm install -g cordova
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Add Android platform
         run: |
           cordova platform remove android || true
           cordova platform add android
+          cordova prepare
 
       - name: Restore Keystore
         run: |
