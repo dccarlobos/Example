@@ -58,7 +58,5 @@ jobs:
         with:
           name: android-build
           path: |
-            platforms/android/**/*.apk
-            platforms/android/**/*.aab
             app/build/outputs/apk/release/*.apk
             app/build/outputs/bundle/release/*.aab
