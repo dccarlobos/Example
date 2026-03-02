@@ -26,8 +26,6 @@
       "cordova-plugin-network-information": {},
       "cordova-plugin-inappbrowser": {},
       "admob-plus-cordova": {
-        "APP_ID_ANDROID": "ca-app-pub-xxx~yyy",
-        "PLAY_SERVICES_VERSION": "23.2.0",
         "ADMOB_APP_ID_ANDROID": "ca-app-pub-3940256099942544~3347511713"
       }
     }
