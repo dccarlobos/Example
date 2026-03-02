@@ -12,7 +12,6 @@ async function initAds() {
       return;
     }
 alert("ads starts");
-    await admob.start();   // 🔥 REQUIRED
 
     await loadInterstitial();
 
