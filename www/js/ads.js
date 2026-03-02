@@ -12,7 +12,6 @@ async function initAds() {
       return;
     }
 alert("Ads Initialized");
-    await window.admob.start();
 
     await loadInterstitial();
     loadNativeAd("#nativeAdIndex", "ca-app-pub-3940256099942544/2247696110");
