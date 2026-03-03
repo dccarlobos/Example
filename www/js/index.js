@@ -4,9 +4,9 @@
 
 // --- 1️⃣ Go to page functiSafely
 const nativeMap = {
-        index: "#nativeAdIndex",
-        quiz-menu: "#nativeAdMenu",
-        quiz-page: "#nativeAdQuiz"
+        "index": "#nativeAdIndex",
+        "quiz-menu": "#nativeAdMenu",
+        "quiz-page": "#nativeAdQuiz"
     };
     
 const goToPage = (pageId) => {
