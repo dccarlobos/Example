@@ -23,7 +23,6 @@
       "cordova-plugin-network-information": {},
       "cordova-plugin-inappbrowser": {},
       "admob-plus-cordova": {
-        "APP_ID_ANDROID": "ca-app-pub-3940256099942544~3347511713",
         "ADMOB_APP_ID": "ca-app-pub-3940256099942544~3347511713"
       }
     },
