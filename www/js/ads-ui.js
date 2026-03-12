@@ -66,7 +66,7 @@ async function loadNativeSafe(pageConfig) {
     console.error("Native ad error:", e);
 
     const container = document.querySelector(pageConfig.selector);
-    if (container) container.style.display = "none";
+    
 
   } finally {
     nativeLoading = false;
